@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+    <link rel="stylesheet" type="text/css" href="resume.css">
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.header {
+    text-align: center;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.job,
+.education {
+    margin-top: 10px;
+}
+
+#print-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:white;
+}
+
+h1 {
+    color: Black;
+}
+
+.border-animation {
+    border: 25px solid transparent;
+    padding: 40px;
+    border-radius: 30px;
+    background-color:red;
+    display: inline-block;
+    transition: border-color 3s ease-in-out;
+}
+
+.border-animation:focus-within {
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color:Blue;
+    }
+    50% {
+        border-color:;
+    }
+    75% {
+        border-color: cyan;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+label {
+    display: ;
+    margin-bottom: 10px;
+}
+
+input[type="Username"],
+input[type="Email"],
+input[type="Password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message {
+    color: black;
+}
+
+</style>
+<body>
+    <div class="resume">
+        <div class="header">
+          <align="center"></align="center"><h1>Your Name</h1>
+            <p>Shivam Tiwari</p>
+        </div>
+        <div class="contact">
+            <div class="contact-item">
+                <span class="icon">E-mail</span>
+                <span class="info">shivamtiwari5158@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">Phone:-</span>
+                <span class="info">8874594899</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">Add:-</span>
+                <span class="info">Narayanpur wali pathri bazar 271123</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Summary</h2>
+            <p>This is a brief summary of your skills and experience.</p>
+        </div>
+        <div class="section">
+            <h2>Work Experience</h2>
+          <h4>2Years</h4>
+            <div class="job">
+                <h3>Job Title</h3>
+                <p><em>Charted Accounter/Assistant</em> </p>
+                <ul>
+                    <li>Accounting Master</li>
+                    <li>Next Level Knowledge</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Degree</h3>
+                <p><em>Tally,B.Com</em> </p>
+            </div>
+        </div>
+    </div>
+    <button id="print-button">Print Resume</button>
+    <script src="resume.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="computer.css">
+</head>
+<body>
+    <h1>Resume Form</h1>
+    <form id="resume-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+
+        <label for="education">Education:</label>
+        <textarea id="education" required></textarea>
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" required></textarea>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" required></textarea>
+
+        <button type="submit">Submit</button>
+      
+        <button type="Reset">Reset</button>
+    </form>
+
+    <div id="output">
+        <!-- Submitted data will be displayed here -->
+    </div>
+
+    <script src="computer.js"></script>
+</body>
+</html>
